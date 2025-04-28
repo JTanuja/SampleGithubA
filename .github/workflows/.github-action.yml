@@ -1,0 +1,10 @@
+name : Run all command
+on : [push]
+
+jobs:
+  run-shell-command:
+    runs-on : unbuntu-latest
+    steps:
+      name : Echo string
+      run : echo "This is sample demo application"
+      
