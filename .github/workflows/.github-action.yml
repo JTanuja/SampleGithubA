@@ -1,9 +1,11 @@
-name : Run all command
-on : [push]
+name: Run all command on push
+
+on:
+  push:
 
 jobs:
   run-shell-command:
-    runs-on : unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -name : Echo string
-      run : echo "This is sample demo application"
+      - name: Echo string
+        run: echo "This is sample demo application"
